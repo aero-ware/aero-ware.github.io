@@ -1,0 +1,29 @@
+.header {
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: grid;
+    place-items: center;
+}
+
+.logo {
+    user-select: none;
+    font-size: 2rem;
+    font-family: "Aero";
+}
+
+.join a {
+    font-family: var(--ff-text);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s ease filter;
+}
+
+.join a:hover {
+    filter: brightness(1.25);
+}
