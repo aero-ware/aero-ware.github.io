@@ -1,3 +1,4 @@
+//@ts-ignore
 import React from "react";
 
 interface PackageProps {
@@ -17,6 +18,7 @@ function Package({ name }: PackageProps) {
                     {name}
                 </h3>
             </a>
+            <img src={`https://img.shields.io/npm/dm/@aeroware/${name}.svg`} alt="" />
             <img src={`https://img.shields.io/npm/dt/@aeroware/${name}.svg`} alt="" />
             <img src={`https://img.shields.io/npm/v/@aeroware/${name}.svg`} alt="" />
         </div>
