@@ -16,14 +16,23 @@
     font-family: "Aero";
 }
 
-.join a {
+.nav {
+    display: flex;
     font-family: var(--ff-text);
     font-size: 1.5rem;
     font-weight: 400;
-    text-decoration: none;
-    transition: 0.3s ease filter;
 }
 
-.join a:hover {
+.nav a {
+    text-decoration: none;
+    transition: 0.3s ease filter;
+    margin: 0.25rem 1rem;
+}
+
+.nav a:hover {
     filter: brightness(1.25);
+}
+
+i.fa-npm {
+    transform: scale(1.5);
 }

@@ -12,7 +12,7 @@ html {
     --ff-text: "Open Sans", sans-serif;
     --ff-code: "Fira Code", monospace;
 
-    --clr-red: #dc054a;
+    --clr-red: #e8064d;
     --clr-white: #d4d4d4;
     --clr-grey: rgb(10, 10, 10);
     --clr-black: black;
@@ -22,17 +22,26 @@ html {
     --fs-h3: 1.5rem;
     --fs-body: 1rem;
 
+    height: 100vh;
+
     overflow-x: hidden;
 
     overscroll-behavior: none;
 }
 
 body {
+    height: 100vh;
     font-family: var(--ff-text);
     font-size: var(--fs-body);
     font-weight: 300;
     color: var(--clr-white);
     background-color: var(--clr-black);
+}
+
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .red {
@@ -106,4 +115,9 @@ h3 {
 @font-face {
     font-family: "Aero";
     src: url("./fonts/aero.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
