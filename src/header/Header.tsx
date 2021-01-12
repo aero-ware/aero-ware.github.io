@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./header.css";
 
 function Header() {
-    const [logoText, setLogoText] = useState(
-        window.innerWidth < 800 ? "A" : "AeroWare"
-    );
+    const [logoText, setLogoText] = useState(window.innerWidth < 800 ? "A" : "AeroWare");
 
     useEffect(() => {
         window.addEventListener("resize", function () {
@@ -20,16 +18,32 @@ function Header() {
                     {logoText.slice(4)}
                 </h1>
             </div>
-            <div className="join">
+            <nav className="nav">
+                <a
+                    href="https://github.com/aero-ware"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="red"
+                >
+                    <i className="fab fa-github"></i>
+                </a>
+                <a
+                    href="https://www.npmjs.com/org/aeroware"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="red"
+                >
+                    <i className="fab fa-npm fa-1x"></i>
+                </a>
                 <a
                     href="https://discord.gg/JdTQG3a9Ye"
                     target="_blank"
                     rel="noreferrer"
                     className="red"
                 >
-                    Join
+                    <i className="fab fa-discord"></i>
                 </a>
-            </div>
+            </nav>
         </header>
     );
 }

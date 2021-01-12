@@ -1,12 +1,12 @@
 .bg-circle {
     z-index: -10;
     position: absolute;
-    top: -8300px;
+    top: -1400px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--clr-grey);
-    width: 9000px;
-    height: 9000px;
+    width: 2000px;
+    height: 2000px;
     border-radius: 50%;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .splash h3 {
-    opacity: 0.5;
+    opacity: 0.75;
     font-weight: 300;
 }
 
@@ -65,8 +65,20 @@
     transform: translateX(-50%);
     width: 500px;
     mix-blend-mode: difference;
-    opacity: 0.1;
+    opacity: 0.15;
     user-select: none;
+}
+
+section {
+    flex: 1;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    height: 100%;
 }
 
 @keyframes fadein {
@@ -86,5 +98,32 @@
 
     .splash {
         min-height: 600px;
+    }
+
+    .bg-circle {
+        z-index: -10;
+        position: absolute;
+        top: -3300px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--clr-grey);
+        width: 4000px;
+        height: 4000px;
+        border-radius: 50%;
+    }
+
+    .links {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        padding-top: 4rem;
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
