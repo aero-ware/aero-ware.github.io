@@ -2,7 +2,6 @@ import React from "react";
 import Package from "./Package";
 import "./splash.css";
 
-
 function Splash() {
     return (
         <>
@@ -29,6 +28,9 @@ function Splash() {
                     <Package name="logger" />
                     <Package name="discord-utils" />
                     <Package name="aeroclient" />
+                    <Package name="slow.db" />
+                    <Package name="outline" />
+                    <Package name="theme.js" />
                 </div>
             </section>
         </>

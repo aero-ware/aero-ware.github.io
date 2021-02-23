@@ -71,6 +71,7 @@
 
 section {
     flex: 1;
+    min-height: 600px;
 }
 
 .links {
@@ -117,13 +118,39 @@ section {
     }
 }
 
+@media (min-width: 1000px) {
+    section {
+        padding-top: 3rem;
+    }
+
+    .package {
+        min-width: 600px;
+    }
+
+    .links {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 @media (min-width: 1200px) {
     section {
         padding-top: 4rem;
     }
 
+    .package {
+        min-width: 100%;
+    }
+
     .links {
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
+
+@media (min-width: 1500px) {
+    .links {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
