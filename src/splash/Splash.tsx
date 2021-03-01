@@ -30,7 +30,7 @@ function Splash() {
                     <Package name="aeroclient" />
                     <Package name="slow.db" />
                     <Package name="outline" />
-                    <Package name="theme.js" />
+                    <Package name="overload.js" />
                 </div>
             </section>
         </>
